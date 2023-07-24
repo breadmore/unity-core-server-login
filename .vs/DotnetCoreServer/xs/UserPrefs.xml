@@ -1,33 +1,38 @@
 ﻿<Properties StartupConfiguration="{BEC86470-6D76-4B03-8103-97AF275E94A3}|Default">
   <MonoDevelop.Ide.ItemProperties.DotnetCoreServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/LoginController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/DB.cs">
     <Files>
       <File FileName="Models/Result/UserResult.cs" Line="9" Column="2" />
       <File FileName="Models/Data/User.cs" Line="8" Column="37" />
-      <File FileName="Models/Dao/UserDao.cs" Line="32" Column="32" />
-      <File FileName="Controllers/UserController.cs" Line="21" Column="48" />
+      <File FileName="Models/Dao/UserDao.cs" Line="26" Column="14" />
+      <File FileName="Controllers/UserController.cs" Line="12" Column="6" />
       <File FileName="Controllers/ValuesController.cs" Line="22" Column="34" />
       <File FileName="Controllers/UpgradeController.cs" Line="110" Column="1" />
       <File FileName="Controllers/UpdateResultController.cs" Line="43" Column="4" />
       <File FileName="Controllers/RankController.cs" Line="17" Column="12" />
-      <File FileName="Controllers/LoginController.cs" Line="13" Column="1" />
+      <File FileName="Controllers/LoginController.cs" Line="40" Column="41" />
+      <File FileName="Models/Dao/RankDao.cs" Line="23" Column="48" />
+      <File FileName="Models/Dao/StageResultDao.cs" Line="1" Column="1" />
+      <File FileName="sql/tb_weapon_tb.sql" Line="1" Column="1" />
+      <File FileName=".gitignore" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="21" Column="26" />
+      <File FileName="Startup.cs" Line="38" Column="51" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Models/DB.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DotnetCoreServer" expanded="True">
             <Node name="DotnetCoreServer" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="LoginController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="Dao" expanded="True" />
                 <Node name="Data" expanded="True" />
                 <Node name="Request" expanded="True" />
                 <Node name="Result" expanded="True" />
+                <Node name="DB.cs" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="sql" expanded="True" />

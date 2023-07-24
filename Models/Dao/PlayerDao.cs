@@ -11,11 +11,11 @@ namespace DotnetCoreServer.Models
         Player GetPlayer(int PlayerID);
     }
 
-    public class UserDao : IPlayerDao
+    public class PlayerDao : IPlayerDao
     {
         public IDB db {get;}
 
-        public UserDao(IDB db){
+        public PlayerDao(IDB db){
             this.db = db;
         }
 
@@ -28,8 +28,8 @@ namespace DotnetCoreServer.Models
                     @"
                     SELECT 
                         player_id, player_address,
-                    FROM tb_user 
-                    WHERE user_id = {0}",
+                    FROM player_tb 
+                    WHERE player_id = {0}",
                      PlayerID);
 
                 Console.WriteLine(query);
