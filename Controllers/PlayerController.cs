@@ -17,6 +17,14 @@ namespace DotnetCoreServer.Controllers
             this.playerDao = playerDao;
         }
 
+        // GET api/user/5
+        [HttpGet("{id}")]
+        public Player Get(int id)
+        {
+            Player player = playerDao.GetPlayer(id);
+            return player;
+        }
+
         [HttpGet]
         public PlayerResult Info(int PlayerID){
 

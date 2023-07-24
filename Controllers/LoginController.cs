@@ -12,7 +12,8 @@
 //    {
 
 //        IUserDao userDao;
-//        public LoginController(IUserDao userDao){
+//        public LoginController(IUserDao userDao)
+//        {
 //            this.userDao = userDao;
 //        }
 
@@ -30,19 +31,22 @@
 //        {
 
 //            LoginResult result = new LoginResult();
-            
+
 //            User user = userDao.FindUserByFUID(requestUser.FacebookID);
-            
-//            if(user != null && user.UserID > 0){ // 이미 가입되어 있음
-                
+
+//            if (user != null && user.UserID > 0)
+//            { // 이미 가입되어 있음
+
 //                result.Data = user;
 //                result.Message = "OK";
 //                result.ResultCode = 1;
 
 //                return result;
 
-//            } else { // 회원가입 해야함
-                
+//            }
+//            else
+//            { // 회원가입 해야함
+
 //                string AccessToken = Guid.NewGuid().ToString();
 
 //                requestUser.AccessToken = AccessToken;
