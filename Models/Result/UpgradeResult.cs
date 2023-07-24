@@ -1,10 +1,10 @@
-using System;
-using System.Collections.Generic;
+//using System;
+//using System.Collections.Generic;
 
-namespace DotnetCoreServer.Models
-{
-    public class UpgradeResult : ResultBase{
-        public List<UpgradeData> Data;
+//namespace DotnetCoreServer.Models
+//{
+//    public class UpgradeResult : ResultBase{
+//        public List<UpgradeData> Data;
 
-    }
-}
+//    }
+//}

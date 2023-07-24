@@ -19,10 +19,10 @@ namespace DotnetCoreServer.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public User Get(int id)
+        public Player Get(int id)
         {
-            User user = new User();
-            return user;
+            Player player = new Player();
+            return player;
         }
 
         // POST api/values

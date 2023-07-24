@@ -8,36 +8,37 @@ using DotnetCoreServer.Models;
 namespace DotnetCoreServer.Controllers
 {
     [Route("[controller]/[action]")]
-    public class UserController : Controller
+    public class PlayerController : Controller
     {
-        IUserDao userDao;
+        IPlayerDao playerDao;
 
-        public UserController(IUserDao userDao){
-            this.userDao = userDao;
+        public PlayerController(IPlayerDao playerDao)
+        {
+            this.playerDao = playerDao;
         }
 
         [HttpGet]
-        public UserResult Info(long UserID){
+        public PlayerResult Info(int PlayerID){
 
-            UserResult result = new UserResult();
-            result.Data = userDao.GetUser(UserID);
+            PlayerResult result = new PlayerResult();
+            result.Data = playerDao.GetPlayer(PlayerID);
             return result;
 
         }
 
-        [HttpPost]
-        public UserResult Update([FromBody] User requestUser){
+        //[HttpPost]
+        //public UserResult Update([FromBody] User requestUser){
 
-            UserResult result = new UserResult();
-            userDao.UpdateUser(requestUser);
+        //    UserResult result = new UserResult();
+        //    userDao.UpdateUser(requestUser);
             
-            result.Data = userDao.GetUser(requestUser.UserID);
+        //    result.Data = userDao.GetUser(requestUser.UserID);
 
-            result.ResultCode = 1;
-            result.Message = "Success";
+        //    result.ResultCode = 1;
+        //    result.Message = "Success";
 
-            return result;
-        }
+        //    return result;
+        //}
 
     }
 
